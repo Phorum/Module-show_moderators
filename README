@@ -1,12 +1,13 @@
-Module  : Show Moderators
-Version : 1.0.1
-Author  : Maurice Makaay
+Module  : @TITLE@
+Version : @VERSION@
+Author  : @AUTHOR@
 
-This module requires Phorum 5.2 or later.
+This module requires Phorum @REQUIRED_VERSION@ or later.
 
-This module makes it possible to show the moderators for a forum on
-the index, list and/or read pages. You can choose whether to include
-administrators in the list of moderators or not.
+@DESCRIPTION@
+
+You can choose whether to include administrators in the list of
+moderators or not.
 
 Note: This module can make use of the Phorum caching system to cache
 the gathered moderator information. If you do, then beware that changes
@@ -20,13 +21,13 @@ Install:
 
 - Unpack the archive;
 
-- Move the directory "show_moderators" to the directory "mods"
+- Move the directory "@MODULE_ID@" to the directory "mods"
   within your Phorum installation;
 
 - Login as administrator in Phorum's administrative interface and
   go to the "Modules" section;
 
-- Enable the module "Show Moderators";
+- Enable the module "@TITLE@";
 
 - Go to the module's settings page and edit the module
   configuration to your likings.
@@ -68,21 +69,21 @@ Customization:
   automatic displaying from the module's settings screen.
 
   If you have automatic displaying enabled for the index page, then the
-  template "mods/show_moderators/templates/templatename/index.tpl" will be
+  template "mods/@MODULE_ID@/templates/templatename/index.tpl" will be
   used for formatting the moderator list for each displayed forum.
   For automatic displaying of the moderators on the list and read pages,
-  the template "mods/show_moderators/templates/templatename/footer.tpl" will
+  the template "mods/@MODULE_ID@/templates/templatename/footer.tpl" will
   be used.
 
   If you want to modify these templates to make them work better for your
   site's template, then do not edit the template files that were in the
   module distribution. Instead, copy the full directory
 
-     "mods/show_moderators/templates/emerald"
+     "mods/@MODULE_ID@/templates/emerald"
 
   to
 
-     "mods/show_moderators/templates/yourtemplatename"
+     "mods/@MODULE_ID@/templates/yourtemplatename"
 
   (asuming that your site's template is stored as "templates/yourtemplatename").
   After doing so, you can edit the files in the new directory. Phorum will

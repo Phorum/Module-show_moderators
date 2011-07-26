@@ -1,5 +1,5 @@
 title: Show Moderators
-desc: Show the moderators for a forum on the index, list and/or read pages.
+desc: This module makes it possible to show the moderators for a forum on the index, list and/or read pages.
 author: Maurice Makaay <maurice@phorum.org>
 url: http://www.phorum.org/phorum5/read.php?62,125053
 version: 1.0.1
